@@ -4,9 +4,6 @@
   font-family: 'Roboto',sans-serif;
 }
 
-body {
-  background-color: whitesmoke;
-}
 
 ul {
   list-style: none;
@@ -32,7 +29,7 @@ a {
 
 .main-container-wrapper {
   min-height: 100%;
-  background: #CCCCCC;
+  background-color: #CCCCCC;
 }
 
 .banner {
@@ -516,62 +513,61 @@ h4 {
   color: #ffffff;
   display: inline-block;
   margin-bottom: 79px;
+  box-sizing: border-box;
+  border: none;
 }
 
-
-.footer-head{
-  margin-top: 33px;
-  margin-bottom: 31px;
-}
-.footer-head ul a{
-  text-decoration: none;
+footer{
+  left:0;
+  bottom:80px;
+  width: 100%;
+  text-align: center;
   color: #333333;
+  }
+  .footer-nav{
+      margin-bottom: 65px;
+  }
+  .footer-nav ul li a{
+      text-decoration: none;
+      color: #333333;
+  }
+  .footer-nav ul li
+  {
+      float: left;
+      text-align: center;
+      padding-left: 33px;
+      font-weight: 500;    font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+  }
+  .copyright{
+      display: inline-block;
+      margin-bottom: 18px;
+      margin-top: 31px;
+      font-size: 10px;
+      line-height: 11px;
+      text-align: center;
+      color: #000000; 
+      width: 100%;
+  }
 }
-.footer-head ul a li{
-  list-style: none;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ @media(min-width:1200px){
+.footer-nav{
   float: left;
-  text-align: center;
-  padding-left: 33px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
 }
 .copyright{
-  display: inline-block;
-  margin-bottom: 18px;
-  margin-top: 31px;
-  font-size: 10px;
-  line-height: 11px;
-  text-align: center;
-  color: #000000; 
-  width: 100%;
+  float: right;
+  width: auto;
+  margin-top: 0px;
 }
-
-@media (min-width: 768px) {
-  .footer-head {
-    text-align: left;
-    margin-left: 39px;
-  }
+.footer-content{
+max-width: 1122px;
+margin: 0 auto;
+margin-top: 32px;
 }
-@media (min-width: 1200px) {
-  footer {
-    padding-bottom: 33px;
-    left: 0;
-    right: 0;
-    color: #333333;
-    display: inline-block;
-  }
-  .copyright {
-    float: right;
-    text-align: right;
-    margin-right: 100px;
-  }
-  .footer-head{
-    float: left;
-    text-align: left;
-    margin-left: 165px;
-  }
 }
-
-
