@@ -227,9 +227,6 @@ a {
   }
 }
 
-
-
-
 .body-container-wrapper {
   background: #ffffff;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 2px 24px rgba(0, 0, 0, 0.14);
@@ -250,6 +247,7 @@ a {
   font-size: 36px;
   line-height: 43px;
   color: #3c4858;
+  left: 50%;
 }
 
 .product-paragraph {
@@ -279,7 +277,6 @@ a {
 }
 
 .feature-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -291,7 +288,6 @@ a {
 }
 
 .feature-text {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -303,12 +299,13 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media (min-width: 1200px) {
   .feature-content {
     display: flex;
     justify-content: center;
   }
-  .feature-content:first-child {
+  .feature-contentr:first-child {
     padding-left: 0;
     margin-left: 0;
   }
@@ -322,10 +319,6 @@ a {
   text-align: center;
 }
 
-.team-members{
-  margin-bottom: 21px;
-}
-
 .team-heading {
   font-style: normal;
   font-weight: normal;
@@ -336,9 +329,25 @@ a {
   left: 50%;
   margin-bottom: 86px;
 }
+
+.team-members{
+  margin-bottom: 21px;
+}
+
 .team {
   width: 230px;
   margin: -30px;
+}
+
+.team-member-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3c4858;
+  text-align: center;
+  left: 50%;
+  margin-bottom: 7px;
 }
 
 h4 {
@@ -428,7 +437,9 @@ h4 {
   }
 }
 
-
+.work-content{
+  text-align: center;
+}
 
 .work-heading{
   font-style: normal;
@@ -437,7 +448,6 @@ h4 {
   line-height: 43px;
   color: #3c4858;
   text-align: center;
-  margin: o,auto;
 }
 
 .work-text {
@@ -462,8 +472,12 @@ h4 {
   left: 10%;
 }
 
+input:focus{
+  border-color: #9c27b0;
+}
+
 .input-line {
-  padding: 7px;
+  padding: 7px 0px;
   display: block;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -488,17 +502,17 @@ h4 {
   .form-content {
     display: flex;
     justify-content: center;
+    margin: 0 -15px;
   }
   .content-name {
-    width: 49.9999%;
+    padding: 0 15px;
+    width: 50%;
   }
   .content-email {
-    width: 49.9999%;
+    padding: 0 15px;
+    width: 50%;
   }
 }
-
-
-
 
 .message-button {
   width: 148px;
@@ -513,9 +527,9 @@ h4 {
   color: #ffffff;
   display: inline-block;
   margin-bottom: 79px;
-  box-sizing: border-box;
   border: none;
 }
+
 
 footer{
   left:0;
@@ -565,9 +579,11 @@ footer{
   width: auto;
   margin-top: 0px;
 }
+}
 .footer-content{
 max-width: 1122px;
 margin: 0 auto;
 margin-top: 32px;
 }
-}
+
+
