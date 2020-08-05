@@ -564,7 +564,7 @@ footer{
       color: #000000; 
       width: 100%;
   }
-}
+
 .clearfix::after {
   content: "";
   clear: both;
